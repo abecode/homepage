@@ -3,19 +3,53 @@
     <link href="bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style>  
-      .span2 h2{color:#FE6E4C; font-weight: bold; padding: 5px;}  
-      h2 {margin: 10px 0 10px 0;}  
+      .span2 h2{
+	  font-weight: bold; 
+	  padding: 5px;
+      }  
+      h2 {
+	  margin: 10px 0 10px 0;
+      }  
+      
+      .leaderboard {  
+	  padding: 5px;  
+          margin: 50px 5px 5px 5px;
+          background-color: #BBBBBB;
+	  -webkit-border-radius: 0px;  
+	  -moz-border-radius: 0px;  
+	  border-radius: 0px;  
+      }  
+      .leaderboard h1 {  
+	  /* font-size: 40px;
+	  margin-bottom: 5px; 
+	  line-height: 1; 
+	  letter-spacing: -1px;     */  
+      }  
+      .center {
+	  float: none;
+          text-align: center;
+          margin: 0 auto;
+	  margin-left: auto;
+	  margin-right: auto;
+      }
     </style>    
   </head>
   <body>
     <div class="container">
+      
+      <!-- first row: title -->
       <div class="row">
-	<div class="span12">
-	  <h1> Hello </h1>
-	  <p>Welcome to my humble homepage.</p>
+	<div class="span8 offset2 center">
+	  <div class="leaderboard">
+	    <h1> Hello </h1>
+	    <p>Welcome to my humble homepage.</p>
+	  </div>
 	</div>
       </div>
-      <div class="row"> 
+      
+      <!-- 2nd row: content -->
+      <div class="row">
+
 	<div class="span2">
 	  <h2> Project 1 </h2>
 	  <p>
@@ -88,7 +122,26 @@
 	    Welcome to my humble homepage.
 	  </p>
 	</div>
-      </div>
-    </div>
+
+      </div> <!-- end row-->
+    </div> <!-- end content-->
+    
+    <!-- Le javascript  
+	 ================================================== -->  
+    <!-- Placed at the end of the document so the pages load faster -->  
+    <script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-transition.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-alert.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-modal.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-scrollspy.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-tab.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-tooltip.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-popover.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-button.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-collapse.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-carousel.js"></script>  
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script>  
+
   </body>
 </html>

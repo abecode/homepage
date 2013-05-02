@@ -11,31 +11,50 @@
 	  margin: 10px 0 10px 0;
       }  
       
-      .leaderboard {  
-	  padding: 30px;  
-	  /* margin-bottom: 30px;   */
-	  background-color: #BBBBBB;
-	  -webkit-border-radius: 6px;  
-	  -moz-border-radius: 6px;  
-	  border-radius: 6px;  
+      .hero-unit {  
+          padding: 20px;  
+          margin: 50px 5px 5px 5px;
+          background-color: #BBBBBB;
+	  -webkit-border-radius: 0px;  
+	  -moz-border-radius: 0px;  
+	  border-radius: 0px;  
       }  
-      .leaderboard h1 {  
-	  /* font-size: 40px;
-	  margin-bottom: 5px; 
-	  line-height: 1; 
-	  letter-spacing: -1px;     */  
-      }  
+      .center {
+	  float: none;
+          text-align: center;
+          margin: 0 auto;
+	  margin-left: auto;
+	  margin-right: auto;
+      }
+      .logo {
+          text-align: center;
+          border: none;
+      }
     </style>    
   </head>
   <body>
     <div class="container">
       
       <!-- first row: title -->
-      <div class="leaderboard">
-	<!-- div class="span12" -->
-	  <h1> Hello </h1>
-	  <p>Welcome to my humble homepage.</p>
-	<!-- /div -->
+      <!-- <div class="row"> -->
+      <!-- 	<div class="span10 offset1 center"> -->
+      <!-- 	  <div class="leaderboard"> -->
+      <!-- 	    <div class="span3">  -->
+      <!-- 	      <div class="thumbnail"> -->
+      <!-- 		<img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/play.png"/> -->
+      <!-- 	      </div> -->
+      <!-- 	    </div> -->
+      <!-- 	  </div> -->
+      <!-- 	</div> -->
+      <!-- </div> -->
+      <div class="hero-unit">
+	<div class="row">
+	  <div class="span3"> 
+	    <div class="thumbnail logo">
+	      <img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/play.png"/>
+	    </div>
+	  </div>
+	</div>
       </div>
       
       <!-- 2nd row: content -->
