@@ -3,6 +3,9 @@
     <link href="bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style>  
+      body {
+          background: url(img/top_tiles.png) center top / 100% 40%  no-repeat, url(img/bottom_tiles.png)  center bottom / 100% 40% no-repeat;
+      }
       .span2 h2{
 	  font-weight: bold; 
 	  padding: 5px;
@@ -28,8 +31,13 @@
 	  margin-right: auto;
       }
       .logo {
-          text-align: center;
+          text-align: top;
+          vertical-align: super;
           border: none;
+      }
+      #infobar {
+          color: white;
+          background-color: #BBBBBB;
       }
     </style>    
   </head>
@@ -60,21 +68,25 @@
 	  
 	  <div class="span2 offset4"> 
 	    <div class="thumbnail logo">
-	      <img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/getStarted.png"/>
+	      <a href="tmp.html"> <img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/getStarted.png"/> </a>
 	    </div>
 	  </div>
 	  
 	  <div class="span2"> 
 	    <div class="thumbnail logo">
-	      <img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/getInspired.png"/>
+	      <a href="tmp.html"> <img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/getInspired.png"/> </a>
 	    </div>
 	  </div>
 	  
 	</div>
       </div>
+
+      <div class="row">
+	&nbsp;
+      </div>
       
       <!-- 2nd row: content -->
-      <div id="myCarousel" class="carousel slide">
+      <div id="myCarousel" class="carousel slide" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270">
 	<ol class="carousel-indicators">
 	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 	  <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -102,87 +114,29 @@
       </div>  
       
 
+      <footer>
+        <div class="row-fluid">
+          <div class="span2">&nbsp;</div>
+          <div class="info-bar span8">
+            <div  class="well" id="infoBar">
+	      
+              <!-- <div class="localized-label">Feedback &amp; Support</div> -->
+	      <div class="span7">
+		<label class="localized-label powered"> Play is created with heart and head in Los Angeles</label>
+	      </div>
+	      <div class="span2 thumbnail logo offset2">
+		<a href="tmp.html"> <img  class="logo" data-src="bootstrap/docs/assets/js/holder/holder.js/360x270" src="img/contactUs.png"/> </a>
+	      </div>
+	      
+            </div>
+            <div class="info-bar-bottom"> </div>
+          </div>
+        </div>
+      </footer>
       
-      <!-- <div class="row"> -->
-
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 1 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 2 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 3 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 4 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 5 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 6 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 7 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 8 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-      <!-- 	<div class="span2"> -->
-      <!-- 	  <h2> Project 9 </h2> -->
-      <!-- 	  <p> -->
-      <!-- 	    1 Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	    Welcome to my humble homepage. -->
-      <!-- 	  </p> -->
-      <!-- 	</div> -->
-
-      <!-- </div> <\!-- end row-\-> -->
-
     </div> <!-- end content-->
     
-    <!-- Le javascript  
+    <!-- javascript  : all are not necessary, remove unneed ones for performance
 	 ================================================== -->  
     <!-- Placed at the end of the document so the pages load faster -->  
     <script src="bootstrap/docs/assets/js/jquery.js"></script>  
